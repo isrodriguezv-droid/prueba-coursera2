@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Responsive</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            transition: background-color 0.5s ease; /* Suaviza el cambio */
+        }
+
+        /* Pantallas pequeñas (móviles): fondo rojo */
+        @media screen and (max-width: 599px) {
+            body {
+                background-color: red;
+                /* Imagen para reto: móvil */
+                background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400'); /* Ej. paisaje móvil */
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        /* Pantallas medianas (tablets): fondo azul */
+        @media screen and (min-width: 600px) and (max-width: 999px) {
+            body {
+                background-color: blue;
+                /* Imagen para reto: tablet */
+                background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800'); /* Ej. ciudad tablet */
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        /* Pantallas grandes (escritorio): fondo verde */
+        @media screen and (min-width: 1000px) {
+            body {
+                background-color: green;
+                /* Imagen para reto: desktop */
+                background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200'); /* Ej. naturaleza desktop */
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Redimensiona la pantalla para ver los cambios.</p>
+</body>
+</html>
